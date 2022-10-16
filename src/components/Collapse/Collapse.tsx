@@ -5,7 +5,7 @@ import arrowUp from '../../assets/arrow-up.svg';
 import arrowDown from '../../assets/arrow-down.svg';
 export interface CollapseProps {
     title: string;
-    content: string;
+    content?: string;
 }
 const Collapse = (props: CollapseProps) => {
     const h = useCollapse(props);

@@ -3,7 +3,8 @@ import { useBanner } from './Banner.hook';
 import './Banner.style.css';
 
 export interface BannerProps {
-    backgroundImage: string;
+    className?: string;
+    backgroundImage?: string;
     heightScale?: number;
     bannerText?: string;
 }
