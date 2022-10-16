@@ -1,0 +1,34 @@
+.collapseContainer {
+	width: 100%;
+	max-width: 1023px;
+}
+
+.titleContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-radius: 5px;
+	background-color: #FF6060;
+}
+
+.titleContainer p {
+	margin: 5px 0 5px 10px;
+	color: #fff;
+}
+
+.contentContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #F7F7F7;
+}
+
+.contentContainer p {
+	margin: 10px 5px 5px 5px;
+	color: #FF6060;
+}
+
+.arrow {
+	margin-right: 10px;
+}

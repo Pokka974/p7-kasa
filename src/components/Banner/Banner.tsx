@@ -4,7 +4,8 @@ import './Banner.style.css';
 
 export interface BannerProps {
     backgroundImage: string;
-    bannerText: string;
+    heightScale?: number;
+    bannerText?: string;
 }
 const Banner = (props: BannerProps) => {
     const h = useBanner(props);
@@ -16,9 +17,10 @@ const Banner = (props: BannerProps) => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'right',
+                height: h.heightScale,
             }}
             className="bannerContainer">
-            <p className="bannerText">{h.bannerText}</p>
+            {h.bannerText && <p className="bannerText">{h.bannerText}</p>}
         </div>
     );
 };

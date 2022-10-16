@@ -12,6 +12,7 @@ const Home = () => {
             <Banner
                 backgroundImage={'https://i.imgur.com/La18naI.png'}
                 bannerText="Chez Vous, partout et ailleurs"
+                heightScale={111}
             />
             {/* Cards */}
             <div className="cardsSection">
