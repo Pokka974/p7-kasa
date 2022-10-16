@@ -3,7 +3,7 @@ import { useCard } from './Card.hook';
 import './Card.style.css';
 
 export interface CardProps {
-    cardTitle: string;
+    cardTitle?: string;
     cardImage: string;
 }
 const Card = (props: CardProps) => {
@@ -18,7 +18,7 @@ const Card = (props: CardProps) => {
                 backgroundPosition: 'right',
             }}
             className="cardContainer">
-            <p className="cardTitle">{h.cardTitle}</p>
+            {h.cardTitle && <p className="cardTitle">{h.cardTitle}</p>}
         </div>
     );
 };
