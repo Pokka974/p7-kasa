@@ -5,7 +5,7 @@ import './Infos.style.css';
 
 const Infos = () => {
     return (
-        <div style={{ padding: '20px' }}>
+        <div className="infosContainer" style={{ padding: '20px' }}>
             <Banner backgroundImage="https://i.imgur.com/9puAFvu.png" heightScale={223} />
             <div className="collapsesContainer">
                 <Collapse

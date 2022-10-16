@@ -1,3 +1,6 @@
+.infosContainer {
+	flex: 1 0 auto;
+}
 .collapsesContainer {
 	display: flex;
 	flex-direction: column;

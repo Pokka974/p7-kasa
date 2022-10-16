@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <main>
+        <div className="home">
             {/* Banner */}
             <Banner
                 backgroundImage={'https://i.imgur.com/La18naI.png'}
-                bannerText="Chez Vous, partout et ailleurs"
+                bannerText="Chez vous, partout et ailleurs"
                 heightScale={111}
             />
             {/* Cards */}
@@ -22,7 +22,7 @@ const Home = () => {
                     </Link>
                 ))}
             </div>
-        </main>
+        </div>
     );
 };
 
