@@ -1,6 +1,7 @@
 .collapseContainer {
 	width: 100%;
 	max-width: 1023px;
+	cursor: pointer;
 }
 
 .titleContainer {

@@ -1,0 +1,65 @@
+.appartmentContainer {
+	flex: 1 0 auto;
+	padding: 20px;
+	color: #FF6060;
+}
+
+.infosSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.infosSection h3 {
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.titleSection {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;
+	gap: 10px;
+}
+
+.titleSection ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 10px;
+}
+
+.titleSection li {
+	list-style: none;
+	color: #fff;
+	background-color: #FF6060;
+	font-size: 0.7em;
+	padding: 2px 15px;
+	border-radius: 5px;
+}
+
+.ratingSection {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hostInfos {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.hostInfos p {
+	max-width: 90px;
+	text-align: end;
+}
+
+.profilePic {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
