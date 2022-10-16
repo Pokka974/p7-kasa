@@ -1,0 +1,62 @@
+.notFoundContainer {
+	flex: 1 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #FF6060;
+	gap: 30px;
+	padding: 20px;
+}
+
+.notFoundText {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.notFoundText h2 {
+	margin: 0;
+	font-size: 6em;
+	transition: ease all .2s;
+}
+
+.notFoundText p {
+	font-size: 0.8em;
+	transition: ease all .2s;
+}
+
+.notFoundBack {
+	flex: 1;
+	display: flex;
+	align-items: flex-start;
+}
+
+.notFoundBack a {
+	margin-top: 30px;
+	text-decoration: underline;
+	color: #FF6060;
+}
+
+@media screen and (min-width: 768px) {
+	.notFoundText h2 {
+		font-size: 6.5em;
+	}
+
+	.notFoundText p {
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.notFoundText h2 {
+		font-size: 10em;
+	}
+
+	.notFoundText p {
+		font-size: 1.2em;
+	}
+}
