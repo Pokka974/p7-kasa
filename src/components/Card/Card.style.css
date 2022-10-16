@@ -1,0 +1,19 @@
+.cardContainer {
+	border-radius: 10px;
+	min-height: 255px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.cardTitle {
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 22.67px;
+	margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+	.cardTitle {
+		font-size: 1.5em;
+	}
+}

@@ -1,0 +1,31 @@
+main {
+	padding: 20px;
+}
+
+.cardsSection {
+	display: flex;
+	flex-direction: column;
+	margin-top: 22px;
+	gap: 20px;
+}
+
+.linkToCard {
+	transition: ease all .2s;
+}
+
+@media screen and (min-width: 768px) {
+	.cardsSection {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.linkToCard {
+		width: 48%;
+	}
+}
+
+@media screen and (min-width: 1064px) {
+	.linkToCard {
+		width: 32%;
+	}
+}
