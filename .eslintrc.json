@@ -1,5 +1,4 @@
 {
-    "linebreak-style": ["error", "windows"],
     "root": true,
     "env": {
         "browser": true,
@@ -20,7 +19,7 @@
     "plugins": ["react", "@typescript-eslint", "prettier"],
     "rules": {
         "indent": "off",
-        "linebreak-style": ["error", "windows"],
+        "linebreak-style": 0,
         "quotes": ["error", "single"],
         "semi": ["error", "always"]
     },
