@@ -6,6 +6,7 @@ import arrowDown from '../../assets/arrow-down.svg';
 export interface CollapseProps {
     title: string;
     content?: string;
+    contents?: string[];
 }
 const Collapse = (props: CollapseProps) => {
     const h = useCollapse(props);
@@ -22,7 +23,8 @@ const Collapse = (props: CollapseProps) => {
             </div>
             {h.isOpen && (
                 <div className="contentContainer">
-                    <p>{h.content}</p>
+                    {h.content && <p>{h.content}</p>}
+                    {h.contents && h.contents.map((c, i) => <p key={i}>{c}</p>)}
                 </div>
             )}
         </div>
