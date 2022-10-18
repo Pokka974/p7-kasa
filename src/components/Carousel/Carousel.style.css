@@ -1,0 +1,44 @@
+.carouselContainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 255px;
+	transition: ease all .2s;
+}
+
+.displayedImage {
+	z-index: -5;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	filter: brightness(70%);
+}
+
+.arrowLeft {
+	position: absolute;
+	cursor: pointer;
+	height: 20px;
+	left: 10px;
+	top: 50%;
+}
+
+.arrowRight {
+	position: absolute;
+	cursor: pointer;
+	right: 20px;
+	top: 50%;
+	height: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.carouselContainer {
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.carouselContainer {
+		height: 415px;
+	}
+}
