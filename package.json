@@ -2,6 +2,7 @@
   "name": "p7-kasa",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Pokka974.github.io/p7-kasa",
   "dependencies": {
     "@babel/core": "^7.19.3",
     "@babel/plugin-syntax-flow": "7.14.5",
@@ -24,6 +25,8 @@
     "web-vitals": "^3.0.3"
   },
   "scripts": {
+	"predeploy" : "yarn run build",
+	"deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -56,6 +59,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
+    "gh-pages": "^4.0.0",
     "prettier": "2.7.1"
   }
 }
