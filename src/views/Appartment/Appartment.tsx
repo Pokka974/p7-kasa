@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../../components/Banner/Banner';
+import Carousel from '../../components/Carousel/Carousel';
 import Collapse from '../../components/Collapse/Collapse';
 import { useAppartment } from './Appartment.hook';
 import './Appartment.style.css';
@@ -10,7 +10,7 @@ const Appartment = () => {
 
     return (
         <div className="appartmentContainer">
-            <Banner backgroundImage={h.appartment?.cover} />
+            <Carousel pictures={h.appartment ? h.appartment.pictures : []} />
             <div className="infosSection">
                 <div className="titleSection">
                     <h3>{h.appartment?.title}</h3>
@@ -34,9 +34,9 @@ const Appartment = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="descriptionContainer">
                 <Collapse title="Description" content={h.appartment?.description} />
-                {/* <Collapse title="Équipements" content={} /> */}
+                <Collapse title="Équipements" contents={h.appartment?.equipments} />
             </div>
         </div>
     );

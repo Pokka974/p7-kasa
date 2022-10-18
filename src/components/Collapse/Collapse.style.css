@@ -1,10 +1,10 @@
 .collapseContainer {
 	width: 100%;
 	max-width: 1023px;
-	cursor: pointer;
 }
 
 .titleContainer {
+	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -20,13 +20,14 @@
 
 .contentContainer {
 	display: flex;
+	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 	background-color: #F7F7F7;
+	padding: 10px 0 10px 5px;
 }
 
 .contentContainer p {
-	margin: 10px 5px 5px 5px;
 	color: #FF6060;
 }
 

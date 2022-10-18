@@ -7,12 +7,12 @@ export const useAppartment = () => {
     const id: string = window.location.href.split('/')[4];
     const [appartment, setAppartment] = useState<Appartment>();
     const [notValidID, setNotValidID] = useState<boolean>(false);
+    const [pictures, setPictures] = useState<string[]>([]);
     const navigate = useNavigate();
     useEffect(() => {
         const fetchAppart: Appartment | undefined = data.find(
             (appart: Appartment) => appart.id === id,
         );
-        console.log(fetchAppart);
 
         if (fetchAppart) {
             setAppartment(fetchAppart);
@@ -23,6 +23,10 @@ export const useAppartment = () => {
     }, []);
 
     useEffect(() => {
+        setPictures(appartment?.pictures ? appartment.pictures : []);
+    }, [appartment]);
+
+    useEffect(() => {
         if (notValidID) {
             navigate('not_found');
         }
@@ -30,5 +34,6 @@ export const useAppartment = () => {
 
     return {
         appartment,
+        pictures,
     };
 };

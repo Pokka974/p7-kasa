@@ -6,14 +6,10 @@ export const useStarRating = (props: StarRatingProps) => {
     const [rating, setRating] = useState<boolean[]>([]);
 
     useEffect(() => {
-        console.log(props.score);
-
         setEmptyStar(5 - props.score);
     }, []);
 
     useEffect(() => {
-        console.log(emptyStars, 'emptystar');
-
         const temp = [];
         for (let i = 0; i < props.score; i++) {
             temp.push(true);
