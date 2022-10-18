@@ -1,4 +1,5 @@
 {
+    "linebreak-style": ["error", "windows"],
     "root": true,
     "env": {
         "browser": true,
